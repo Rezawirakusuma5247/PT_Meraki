@@ -71,6 +71,7 @@ body {
 .header p {
     font-size: 1.2rem;
     color: #666;
+    
 }
 
 /* Submenu styles */
@@ -103,3 +104,4 @@ body {
 .navbar-nav .nav-item.dropdown .dropdown-menu > .dropdown-submenu:hover > .dropdown-menu {
     display: block;
 }
+
