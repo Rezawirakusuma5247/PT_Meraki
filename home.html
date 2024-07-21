@@ -7,15 +7,30 @@
     <link rel="icon" href="assets/logo/pt_meraki.png" class="">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <!-- Custom CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        .footer {
+            background-color: #989FC1;
+        }
+        .footer ul {
+            font-size: 0.875rem;
+            color: white;
+            padding-left: 0; 
+            list-style: none;
+        }
+        .footer a {
+            color: white; 
+            text-decoration: none; 
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg" style="background-color: #B04C87;">
+    <nav class="navbar navbar-expand-lg sticky-top" style="background-color: rgba(176, 76, 135, 0.75);">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand text-white" href="#">
                 <img src="assets/logo/pt_meraki.png" alt="PT Meraki Institute Logo" width="50px">
                 PT. Meraki Institute
             </a>
@@ -25,19 +40,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+                        <a class="nav-link active text-white" aria-current="page" href="#hero">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link text-white" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pelatihan.html">Pelatihan</a>
+                        <a class="nav-link text-white" href="pelatihan.html">Pelatihan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#certificate">Certificate</a>
+                        <a class="nav-link text-white" href="#certificate">Certificate</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Info Update
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -64,61 +79,63 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link text-white" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
-    <header>
+    
         <main class="main">
-            <section id="tampilanawal">
+            <section id="tampilanawal" class="py-4">
                 <div class="container">
                     <div class="row gy-4">
-                        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+                        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
                             <h1>Better Solutions For Your Business</h1>
-                            <p>Pelatihan dan Sertifikasi Kompetensi sesuai standar BNSP/Kemnaker RI, mandiri atau dengan provider lain.</p>
-                            <div class="d-flex">
-                                <a href="#about" class="btn-get-started">Get Started</a>
+                            <h6 class="my-2">Pelatihan dan Sertifikasi Kompetensi sesuai standar BNSP/Kemnaker RI, mandiri atau dengan provider lain.</h6>
+                            <div class="d-flex my-3">
+                                <a href="#about" class="btn btn-primary">Get Started</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
-            <section id="about" class="about section col-lg-12 mx-auto">
-                <div class="container-section-title">
+            <section id="about" class="about section my-3 py-5" style="background-color: #f8f9fa;">
+                <div class="container-section-title text-center">
                     <h2>About Us</h2>
+                    <hr class="col-1 mx-auto border border-dark opacity-100 border-2 mt-3 mb-3">
                 </div>
                 <div class="container">
-                    <div class="row gy-4">
-                        <div class="col-lg-6">
-                            <p>Meraki Institute merupakan lembaga pelatihan dan sertifikasi kompetensi bidang Kesehatan dan Keselamatan Kerja (K3), Manajemen Lingkungan Hidup & Keanekaragaman Hayati, dan Strategi Bisnis.</p>
+                    <div class="row mx-auto col-lg-12">
+                        <div class="card col-lg-5 gy-4 mx-auto">
+                            <div class="card-body">
+                                <p>Meraki Institute merupakan lembaga pelatihan dan sertifikasi kompetensi bidang Kesehatan dan Keselamatan Kerja (K3), Manajemen Lingkungan Hidup & Keanekaragaman Hayati, dan Strategi Bisnis.</p>
+                            </div>
                         </div>
-                        <div class="col-lg-6">
-                            <p>Pelatihan dan Sertifikasi Kompetensi sesuai bidang profesi peserta mengacu pada standar kompetensi dari BNSP dan atau Kemnaker RI yang dilaksanakan secara mandiri atau bekerjasama dengan provider lainnya.</p>
+                        <div class="card col-lg-5 gy-4 mx-auto">
+                            <div class="card-body">
+                                <p>Pelatihan dan Sertifikasi Kompetensi sesuai bidang profesi peserta mengacu pada standar kompetensi dari BNSP dan atau Kemnaker RI yang dilaksanakan secara mandiri atau bekerjasama dengan provider lainnya.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-
             <section id="why-us" class="section why-us light-background" data-builder="section">
                 <div class="container">
                     <div class="row-gy-4">
                         <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
                             <div class="content px-xl-5">
-                                <h3>layanan pelatihan PT Meraki Anugerah Pratama adalah kemampuan mereka untuk menyesuaikan program untuk memenuhi kebutuhan organisasi tertentu.</h3>
+                                <h3 class="">layanan pelatihan PT Meraki Anugerah Pratama adalah kemampuan mereka untuk menyesuaikan program untuk memenuhi kebutuhan organisasi tertentu.</h3>
                             </div>
                         </div>
                     </div>
                 </div>
                 
             </section>
-
             <section id="services" class="service section light-background">
-                <div class="container section title">
+                <div class="container section title text-center">
                     <h2>Services</h2>
+                    <hr class="col-1 mx-auto border border-dark opacity-100 border-2 mt-3 mb-3">
                     <p>Service kami meliputi Pelatihan KEMNAKER RI dan Pelatihan BNSP.</p>
                 </div>
                 <div class="container">
@@ -127,12 +144,10 @@
                     </div>
                 </div>
             </section>
-
-
-
             <section id="portfolio" class="portfolio section">
-                <div class="container section title">
+                <div class="container section title text-center">
                     <h2>Portfolio</h2>
+                    <hr class="col-1 mx-auto border border-dark opacity-100 border-2 mt-3 mb-3">
                     <p>Portfolio kami berisi hasil pelatihan yang telah kami lakukan.</p>
                 </div>
                 <div class="container">
@@ -141,184 +156,166 @@
                             <img src="..." class="img-fluid" alt="..." max-width="100%" height="auto" >
                         </div>
             </section>
-
-            <section id="search" class="container py-5">
+            <!-- <section id="search" class="container py-5">
                 <div class="row justify-content-center">
-                  <div class="col-lg-6">
-                    <h3>Search your certificate</h3>
-
-                    <form>
-                      <div class="form-group">
-                        <label for="fullName">Full Name</label>
-                        <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
-                      </div>
-                      <ul class="nav nav-pills nav-fill gap-10 p-1 small bg-primary rounded-5 shadow-sm" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
-                        <li class="nav-item" role="button">
-                          <button class="nav-link active rounded-5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Search</button>
-                      </div>
-                    </form>
-                  </div>
+                    <div class="col-lg-6">
+                        <h3>Search your certificate</h3>
+                        <form>
+                            <div class="mb-3">
+                                <label for="fullName" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary rounded-pill">Search</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </section>
-
-            <section id="certificate" class="certificate section">
-                <div class="container section title">
+            </section> -->
+            <section id="certificate" class="py-5">
+                <div class="container text-center mb-4">
                     <h2>Certificate</h2>
-                    <p>Certificate kami telah diberikan kepada pelatih yang telah melakukan pelatihan dan sertifikasi.</p>
+                    <hr class="col-1 mx-auto border border-dark opacity-100 border-2 mt-3 mb-3">
+                    <h6>Certificate kami telah diberikan kepada pelatih yang telah melakukan pelatihan dan sertifikasi.</h6>
                 </div>
-                <div class="container">
-                    <div class="row-gy-4">
-                        <div class="col-lg-4">
-                            <img src="..." class="img-fluid" alt="..." max-width="100%" height="auto" >
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="contact" class="contact section dark-background">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-6">
-                            <h3>Contact Us</h3>
-                            <p>Jika anda ingin menghubungi kami, silahkan isi form dibawah ini.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-5">
-                            <div class="info-wrap">
-                                <div class="info-item d-flex">
-                                    <i class="bi bi-geo-alt flex-shrink-0"></i>
-                                    <div>
-                                        <h3>Kontak Meraki Institute</h3>
-                                        <p>0812-8552-7615</p>
-                                    </div>
-                                </div><!-- End Info Item -->
-            
-                                <div class="info-item d-flex">
-                                    <i class="bi bi-telephone flex-shrink-0"></i>
-                                    <div>
-                                        <h3>Call Us</h3>
-                                        <p>0251-754-9585</p>
-                                    </div>
-                                </div><!-- End Info Item -->
-            
-                                <div class="info-item d-flex">
-                                    <i class="bi bi-envelope flex-shrink-0"></i>
-                                    <div>
-                                        <h3>Email Us</h3>
-                                        <p>info@merakiap.com</p>
-                                    </div>
-                                </div><!-- End Info Item -->
+                <div class="container mt-5">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                        <div class="col d-flex justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <img src="assets/Img/Certificate.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Certificate</h5>
+                                    <p class="card-text">Example Certificate</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-7">
-                            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-                                <div class="row gy-4">
-                                    <div class="col-md-6">
-                                        <label for="name-field" class="pb-2">Your Name</label>
-                                        <input type="text" name="name" id="name-field" class="form-control" required="">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="email-field" class="pb-2">Your Email</label>
-                                        <input type="email" class="form-control" name="email" id="email-field" required="">
-                                    </div>
-                                    <div class="col-md-12">
-                                        <label for="subject-field" class="pb-2">Subject</label>
-                                        <input type="text" class="form-control" name="subject" id="subject-field" required="">
-                                    </div>
-                                    <div class="col-md-12">
-                                        <label for="message-field" class="pb-2">Message</label>
-                                        <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
-                                    </div>
-                                    <div class="col-md-12 text-center">
-                                        <div class="loading">Loading</div>
-                                        <div class="error-message"></div>
-                                        <div class="sent-message">Your message has been sent. Thank you!</div>
-                                        <button type="submit">Send Message</button>
-                                    </div>
+                        <div class="col d-flex justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <img src="assets/Img/Certificate.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Certificate</h5>
+                                    <p class="card-text">Example Certificate</p>
                                 </div>
-                            </form>
-                        </div><!-- End Contact Form -->
+                            </div>
+                        </div>
+                        <div class="col d-flex justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <img src="assets/Img/Certificate.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Certificate</h5>
+                                    <p class="card-text">Example Certificate</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-            
-            <footer id="footer" class="footer">
-                <div class="footer-newsletter">
+            <section id="contact" class="contact section dark-background">
+                <div class="container mt-5 mb-5">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 mt-3">
+                            <h2 class="mb-2">Contact Us</h2>
+                            <hr class="col-3 m-1 border border-dark opacity-100 border-2 mt-3 mb-3">
+                            <p class="mx-auto">Jika anda ingin menghubungi kami, silahkan isi form di samping.</p>
+                            <h3>Kontak Meraki Institute</h3>
+                            <p><i class="fab fa-whatsapp"></i> 0812-8552-7615</p>
+                            <h3>Call Us</h3>
+                            <p><i class="fas fa-phone"></i> 0251-754-9585</p>
+                            <h3>Email Us</h3>
+                            <p><i class="fas fa-envelope"></i> info@merakip.com</p>
+                        </div>
+                        <div class="col-md-6">
+                            <form>
+                                <div class="form-group row mt-3 mb-3">
+                                    <div class="col-md-6">
+                                        <label for="name" class="mb-1">Name</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="mb-1">Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                                    </div>
+                                </div>
+                                <div class="form-group mt-3 mb-3">
+                                    <label for="subject" class="mb-1">Subject</label>
+                                    <input type="text" class="form-control" id="subject" placeholder="Enter subject">
+                                </div>
+                                <div class="form-group mt-3 mb-3">
+                                    <label for="message" class="mb-1">Message</label>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block mt-3 mb-3 col-lg-12">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="footer-newsletter py-3 mb-3 mt-5 mb-5">
                     <div class="container">
-                      <div class="row justify-content-center text-center">
-                        <div class="col-lg-6">
-                          <h4>Join Our Newsletter</h4>
-                          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-                          <form action="forms/newsletter.php" method="post" class="php-email-form">
-                            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-                          </form>
+                        <div class="row justify-content-center text-center">
+                            <div class="col-lg-6">
+                                <h4>Bergabunglah dengan Buletin Kami</h4>
+                                <p>Berlangganan buletin kami dan dapatkan berita terbaru tentang informasi dan layanan kami!</p>
+                                <form>
+                                    <div class="input-group mb-3">
+                                        <input type="email" class="form-control" placeholder="Masukan email-mu" aria-label="Enter your email" aria-describedby="button-subscribe">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="submit" id="button-subscribe">Subscribe</button>
+                                        </div>
+                                    </div>
+                                    <div class="loading d-none">Loading</div>
+                                    <div class="error-message d-none">An error occurred. Please try again.</div>
+                                    <div class="sent-message d-none">Your subscription request has been sent. Thank you!</div>
+                                </form>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
-              
-                  <div class="container footer-top">
-                    <div class="row gy-4">
-                      <div class="col-lg-4 col-md-6 footer-about">
-                        <a href="index.html" class="d-flex align-items-center">
-                          <span class="sitename">Meraki Institute</span>
-                        </a>
-                        <div class="footer-contact pt-3">
-                          <p>Kontak CDC : 0813-8988-3203</p>
-                          <p>Kontak Meraki Institute : 0812-8552-7615</p>
-                          <p class="mt-3"><strong>Phone:</strong> <span>0251-754-9585</span></p>
-                          <p><strong>Email:</strong> <span>info@merakiap.com</span></p>
+                </div>
+            </section>    
+            <footer id="footer" class="footer">
+                <div class="container py-3">
+                    <div class="row mx-auto mt-3">
+                        <!-- About Section -->
+                        <div class="col-md-4 mb-3 mb-md-0">
+                            <a href="index.html" class="d-flex align-items-center mb-3">
+                                <span class="h5 mb-0 text-dark fw-bold">Meraki Institute</span>
+                            </a>
+                            <p class="mb-1 text-white small">Kontak CDC: 0813-8988-3203</p>
+                            <p class="mb-1 text-white small">Meraki Institute: 0812-8552-7615</p>
+                            <p class="mb-1 text-white small"><strong>Phone:</strong> 0251-754-9585</p>
+                            <p class="mb-0 text-white small"><strong>Email:</strong> info@merakiap.com</p>
                         </div>
-                      </div>
-              
-                      <div class="col-lg-2 col-md-3 footer-links">
-                        <h4>Useful Links</h4>
-                        <ul>
-                          <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-                          <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-                          <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-                          <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-                        </ul>
-                      </div>
-              
-                      <div class="col-lg-2 col-md-3 footer-links">
-                        <h4>Our Services</h4>
-                        <ul>
-                          <li><i class="bi bi-chevron-right"></i> <a href="#">Pelatihan K3 KEMNAKER RI</a></li>
-                          <li><i class="bi bi-chevron-right"></i> <a href="#">Pelatihan BNSP </a></li>
-                        </ul>
-                      </div>
-              
-                      <div class="col-lg-4 col-md-12">
-                        <h4>Follow Us</h4>
-                        <p>Anda bisa langsung follow sosial media kami </p>
-                        <div class="social-links d-flex">
-                          <a href=""><i class="bi bi-twitter-x"></i></a>
-                          <a href=""><i class="bi bi-facebook"></i></a>
-                          <a href=""><i class="bi bi-instagram"></i></a>
-                          <a href=""><i class="bi bi-linkedin"></i></a>
+                        <div class="col-md-2 mb-3 mb-md-0">
+                            <h5 class="small  fw-bold">Useful Links</h5>
+                            <ul>
+                                <li><a href="home.html" class="text-white small">Home</a></li>
+                                <li><a href="home.html" class="text-white small">About us</a></li>
+                                <li><a href="certificate.html" class="text-white small">Certification</a></li>
+                                <li><a href="pelatihan.html" class="text-white small">Pelatihan</a></li>
+                            </ul>
                         </div>
-                      </div>
-              
+                        <div class="col-md-4 mb-3 mb-md-0">
+                            <h5 class="small fw-bold">Our Services</h5>
+                            <ul>
+                                <li><a href="#" class="text-white small">Pelatihan K3 KEMNAKER RI</a></li>
+                                <li><a href="#" class="text-white small">Pelatihan BNSP</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2">
+                            <h5 class="small fw-bold">Follow Us</h5>
+                            <div class="d-flex">
+                                <a href="#" class="me-2 text-white small"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="me-2 text-white small"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="me-2 text-white small"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="me-2 text-white small"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-              
-                  
+                </div>
+                <p class="text-center py-1 mb-0 text-white small">&copy; 2024 Meraki Institute. All rights reserved.</p>
             </footer>
-        </main>
-    </header>
-
-    <!-- Bootstrap JS Bundle with Popper -->
-    <footer class="text-center py-4">
-        <p>&copy; 2024 Meraki Institute. All rights reserved.</p>
-      </footer>
-    
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
     </html>
