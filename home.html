@@ -25,6 +25,15 @@
         .footer a:hover {
             text-decoration: underline;
         }
+        /* Custom styles for dropdown submenu */
+        .dropdown-menu .dropdown-submenu {
+            position: relative;
+        }
+        .dropdown-menu .dropdown-submenu .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -1px;
+        }
     </style>
 </head>
 <body>
@@ -57,7 +66,7 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li class="dropdown-submenu">
-                                <a class="dropdown-item dropdown-toggle" href="#">Jadwal Pelatihan K3</a>
+                                <a class="dropdown-item dropdown-toggle" href="">Jadwal Pelatihan K3</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">Deep Dropdown 1</a></li>
                                     <li><a class="dropdown-item" href="#">Deep Dropdown 2</a></li>
@@ -67,7 +76,7 @@
                                 </ul>
                             </li>
                             <li class="dropdown-submenu">
-                                <a class="dropdown-item dropdown-toggle" href="#">Pelatihan BNSP</a>
+                                <a class="dropdown-item dropdown-toggle" href="">Pelatihan BNSP</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">Deep Dropdown 1</a></li>
                                     <li><a class="dropdown-item" href="#">Deep Dropdown 2</a></li>
@@ -152,10 +161,12 @@
                             <div class="col-md-4">
                                 <img src="assets/Img/Pelatihan/tkbtII-100.jpg" class="img-fluid" alt="Image 3" style="max-width: 100%; height: auto;">
                             </div>
+                        <div>
                             <button type="button" class="btn btn-primary"
-                                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                                    Custom button
+                                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                Custom button
                             </button>
+                        </div>
 
                             <p>
                                 BNSP
@@ -167,8 +178,14 @@
                                 <img src="assets/Img/Pelatihan/singleimage-100.jpg" class="img-fluid" alt="Single Image" style="max-width: 100%; height: auto;">
                             </div>
                         </div>
+                        <div>
+                            <button type="button" class="btn btn-primary"
+                                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                Custom button
+                        </button>
+                        </div>
                     </div>
-            <section id="portfolio" class="portfolio section">
+                    <section id="portfolio" class="portfolio section">
                 <div class="container section title text-center">
                     <h2>Portfolio</h2>
                     <hr class="col-1 mx-auto border border-dark opacity-100 border-2 mt-3 mb-3">
