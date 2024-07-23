@@ -95,12 +95,12 @@
         </div>
     </nav>
     
-        <main class="main">
-            <section id="tampilanawal" class="py-4">
+        <main class="main bg-light">
+            <section id="tampilanawal" class="py-4 " style="background-color: rgba(176, 76, 135, 0.75);">
                 <div class="container">
                     <div class="row gy-4">
                         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                            <h1>Better Solutions For Your Business</h1>
+                            <h1 class="text-white">Better Solutions For Your Business</h1>
                             <h6 class="my-2">Pelatihan dan Sertifikasi Kompetensi sesuai standar BNSP/Kemnaker RI, mandiri atau dengan provider lain.</h6>
                             <div class="d-flex my-3">
                                 <a href="#services" class="btn btn-primary">Get Started</a>
@@ -129,90 +129,109 @@
                     </div>
                 </div>
             </section>
-            <section id="why-us" class="section why-us light-background" data-builder="section">
+            <section id="why-us" class="py-5 bg-light">
                 <div class="container">
-                    <div class="row-gy-4">
+                    <div class="row g-4">
+                        <div class="container-section-title text-center">
+                            <h2>Why Us</h2>
+                            <hr class="col-1 mx-auto border border-dark opacity-100 border-2 mt-3 mb-3">
+                        </div>
                         <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
                             <div class="content px-xl-5">
-                                <h3 class="">layanan pelatihan PT Meraki Anugerah Pratama adalah kemampuan mereka untuk menyesuaikan program untuk memenuhi kebutuhan organisasi tertentu.</h3>
+                                <h4 class="text-dark mb-4">Layanan pelatihan PT Meraki Anugerah Pratama adalah kemampuan mereka untuk menyesuaikan program untuk memenuhi kebutuhan organisasi tertentu.</h4>
+                                <div class="accordion" id="whyUsAccordion">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Customized Training
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#whyUsAccordion">
+                                            <div class="accordion-body">
+                                                Our training programs are tailored to meet the specific needs of your organization, ensuring relevant and impactful learning experiences.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                Expert Instructors
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#whyUsAccordion">
+                                            <div class="accordion-body">
+                                                Our courses are led by industry experts with years of experience, providing you with the knowledge and skills you need to succeed.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                Flexible Scheduling
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#whyUsAccordion">
+                                            <div class="accordion-body">
+                                                We offer flexible scheduling options to fit the busy schedules of our clients, ensuring that training can be conducted at the most convenient times.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                        </div>
+                        <div class="col-lg-5 order-1 order-lg-2 text-center">
+                            <img src="your-image-url.jpg" class="img-fluid rounded" alt="Why Us">
                         </div>
                     </div>
                 </div>
-                
             </section>
-            <section id="services" class="service section light-background">
-                <div class="container section title text-center">
+            <section id="services" class="py-5 bg-light">
+                <div class="container text-center mb-4">
                     <h2>Pelatihan</h2>
                     <hr class="col-1 mx-auto border border-dark opacity-100 border-2 mt-3 mb-3">
                     <p>Pelatihan kami meliputi Pelatihan KEMNAKER RI dan Pelatihan BNSP.</p>
-                        <p>
-                            KEMNAKER RI
-                        </p>
-                    <div class="container">
-                        <!-- Row for the first three images -->
-                        <div class="row gy-4">
-                            <div class="col-md-4 col sm-6 mx-auto">
-                                <img src="assets/Img/Pelatihan/k3kontrksi-100.jpg" class="img-fluid" alt="Image 1" style="max-width: 100%; height: auto;">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="assets/Img/Pelatihan/k3ruangterbatas-100.jpg" class="img-fluid" alt="Image 2" style="max-width: 100%; height: auto;">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="assets/Img/Pelatihan/tkbtII-100.jpg" class="img-fluid" alt="Image 3" style="max-width: 100%; height: auto;">
-                            </div>
-                        <div>
-                            <button type="button" class="btn btn-primary"
-                                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                                Custom button
-                            </button>
+                    <p>KEMNAKER RI</p>
+                    <div class="row gy-4">
+                        <div class="col-md-4 col-sm-6 mx-auto">
+                            <img src="assets/Img/Pelatihan/k3kontrksi-100.jpg" class="img-fluid" alt="Image 1">
                         </div>
-
-                            <p>
-                                BNSP
-                            </p>
+                        <div class="col-md-4 col-sm-6">
+                            <img src="assets/Img/Pelatihan/k3ruangterbatas-100.jpg" class="img-fluid" alt="Image 2">
                         </div>
-                        <!-- Row for the single image below the first three images -->
-                        <div class="row gy-4">
-                            <div class="col-12">
-                                <img src="assets/Img/Pelatihan/singleimage-100.jpg" class="img-fluid" alt="Single Image" style="max-width: 100%; height: auto;">
-                            </div>
-                        </div>
-                        <div>
-                            <button type="button" class="btn btn-primary"
-                                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                                Custom button
-                        </button>
+                        <div class="col-md-4 col-sm-6">
+                            <img src="assets/Img/Pelatihan/tkbtII-100.jpg" class="img-fluid" alt="Image 3">
                         </div>
                     </div>
-                    <section id="portfolio" class="portfolio section">
-                <div class="container section title text-center">
+                    <div class="mt-4">
+                      <a href="pelatihan_kemnaker.html" class="btn btn-primary">Go Kemnaker</a>
+                    </div>
+                    <p class="mt-4">BNSP</p>
+                    <div class="row gy-4">
+                        <div class="col-12">
+                            <img src="assets/Img/Pelatihan/singleimage-100.jpg" class="img-fluid" alt="Single Image">
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <a href="pelatihan_bnsp.html" class="btn btn-primary">Go BNSP</a>
+                      </div>
+                </div>
+            </section>
+            
+            <section id="portfolio" class="py-5 bg-light">
+                <div class="container text-center mb-4">
                     <h2>Portfolio</h2>
                     <hr class="col-1 mx-auto border border-dark opacity-100 border-2 mt-3 mb-3">
                     <p>Portfolio kami berisi hasil pelatihan yang telah kami lakukan.</p>
                 </div>
                 <div class="container">
-                    <div class="row-gy-4">
-                        <div class="col-lg-4">
-                            <img src="..." class="img-fluid" alt="..." max-width="100%" height="auto" >
+                    <div class="row gy-4">
+                        <div class="col-lg-4 col-sm-6 mx-auto">
+                            <img src="..." class="img-fluid" alt="...">
                         </div>
-            </section>
-            <!-- <section id="search" class="container py-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <h3>Search your certificate</h3>
-                        <form>
-                            <div class="mb-3">
-                                <label for="fullName" class="form-label">Full Name</label>
-                                <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
-                            </div>
-                            <div class="d-grid">
-                                <button type="submit" class="btn btn-primary rounded-pill">Search</button>
-                            </div>
-                        </form>
                     </div>
                 </div>
-            </section> -->
+            </section>
+            
             <!--<section id="certificate" class="py-5">
                 <div class="container text-center mb-4">
                     <h2>Certificate</h2>
@@ -354,9 +373,10 @@
             </div>
         </div>
         <p class="text-center py-1 mb-0 text-white small">&copy; 2024 Meraki Institute. All rights reserved.</p>
-    </footer>
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    
     </body>
     </html>
