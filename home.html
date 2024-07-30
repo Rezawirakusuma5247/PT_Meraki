@@ -9,6 +9,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <style>
+        .bg-main {
+            background-image: url('assets/Img/web home-100.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
         .footer {
             background-color: #989FC1;
         }
@@ -39,6 +45,11 @@
             bottom: 20px;
             right: 20px;
             z-index: 1000;
+        }
+        .btn-primary {
+            background-color: #989FC1;
+            border: none;
+            text-align: center;
         }
     </style>
 </head>
@@ -101,29 +112,26 @@
         </div>
     </nav>
     
-        <main class="main bg-light" id="get" >
-            <section id="tampilanawal" class="py-4 " style="background-color: #b04c87bf;">
-                <div class="container">
-                    <div class="row gy-4">
-                        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                            <h1 class="text-white">Better Solutions For Your Business</h1>
-                            <h6 class="my-2">Pelatihan dan Sertifikasi Kompetensi sesuai standar BNSP/Kemnaker RI, mandiri atau dengan provider lain.</h6>
-                            <div class="d-flex my-3">
-                                <a href="#services" class=" col-6 btn btn-lg btn-primary">Get Started</a>
-                            </div>
-                            <div class="conainer">
-                                <img src="" alt="">
-                            </div>
+    <main class="main bg-light" id="get">
+        <section id="tampilanawal" class="py-4" style="background-color: #b04c87bf;">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                        <h1 class="text-white">Program Pengembangan Profesional Pelatihan dan Sertifikasi Meraki Institute</h1>
+                        <h6 class="my-2">Pelatihan dan Sertifikat Kompetensi sesuai standar BNSP, Kemnaker RI, atau Pelatihan Internal.</h6>
+                        <div class="d-flex my-3">
+                            <a href="#services" class="col-6 btn btn-lg btn-primary">Get Started</a>
                         </div>
                     </div>
                 </div>
+            </div>
             </section>
             <div class="container" >
                 <div class="row gy-4">
                     <div class="col-lg-12 order-2 order-lg-1 d-flex justify-content-between align-items-center bg-light p-3">
                         <div class="text-left">
-                            <h4><span style="color: #b04c87bf;">Informasi &</span> Jadwal Pelatihan</h4>
-                            <h4 style="color: #b04c87bf;">PT Meraki Institute</h4>
+                            <h4><span style="color: #b04c87bf;">Meraki Institute by</span> </h4>
+                            <h4 style="color: #b04c87bf;">PT. Meraki Anugerah Pratama</h4>
                             <p>PT Meraki menyiapkan segala macam pelatihan yang anda butuhkan! <br>Lakukan hal terbaik untuk hasil yang terbaik!</p>                           
                         </div>
                         <button type="button" class="btn btn-success btn-md d-flex align-items-center whatsapp-button">
@@ -207,7 +215,7 @@
                             </div>
                         </div>
                         <div class="col-lg-5 order-1 order-lg-2 text-center">
-                            <img src="your-image-url.jpg" class="img-fluid rounded" alt="Why Us">
+                            <img src="assets/Img/web home-100.jpg" class="img-fluid rounded" alt="Why Us">
                         </div>
                     </div>
                 </div>
@@ -225,6 +233,9 @@
                         </li>
                         <li class="nav-item">
                             <button class="nav-link" onclick="showSection('bnsp')">BNSP</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" onclick="showSection('bnsp')">Internal</button>
                         </li>
                     </ul>
             
@@ -260,7 +271,7 @@
                             </div>
                         </div>
                         <div class="mt-4">
-                            <a href="pelatihan_kemnaker.html" class="col-3  btn-lg btn btn-primary">Go Kemnaker</a>
+                            <a href="pelatihan_kemnaker.html" class="col-3  btn-lg btn btn-primary">Read More</a>
                         </div>
                     </div>
             
@@ -272,10 +283,19 @@
                             </div>
                         </div>
                         <div class="mt-4">
-                            <a href="pelatihan_bnsp.html" class="col-3  btn-lg btn btn-primary">Go BNSP</a>
+                            <a href="pelatihan_bnsp.html" class="col-3  btn-lg btn btn-primary">Read More</a>
                         </div>
                     </div>
-                </div>
+                    <div id="internal" class="filter-section d-none">
+                        <div class="row gy-4">
+                            <div class="col-12">
+                                <img src="assets/Img/Pelatihan/singleimage-100.jpg" class="img-fluid" alt="Single Image">
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <a href="pelatihan_bnsp.html" class="col-3  btn-lg btn btn-primary">Read More</a>
+                        </div>
+                    </div>
             </section>
             
             <script>
