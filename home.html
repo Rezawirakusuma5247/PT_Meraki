@@ -40,17 +40,93 @@
             left: 100%;
             margin-top: -1px;
         }
-        .whatsapp-button {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
-        }
         .btn-primary {
             background-color: #989FC1;
             border: none;
             text-align: center;
         }
+        body {
+    font-family: Arial, sans-serif;
+}
+
+.chat-bubble {
+    position: fixed;
+    bottom:80px; /* Increased to make room for the button */
+    right: 20px;
+    width: 350px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    overflow: hidden;
+    display: none; /* Hidden by default */
+}
+
+.chat-header {
+    background-color: #989FC1;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.chat-body {
+    padding: 10px;
+}
+
+.chat-account {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.chat-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.chat-info {
+    flex-grow: 1;
+    padding: 2px;
+    
+}
+
+.chat-link {
+    color: #989FC1;
+    text-decoration: none;
+}
+
+.chat-footer {
+    background-color: #f8f8f8;
+    padding: 10px;
+    text-align: center;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px; /* Changed to position the button below the chat bubble */
+    right: 20px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 40px; /* Adjusted to maintain circular shape */
+    padding: 10px 20px; /* Added padding for button */
+    font-size: 16px; /* Adjusted font size */
+    cursor: pointer;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* Ensured no underline for link */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-button i {
+    margin-right: 8px;
+}
+
+
     </style>
 </head>
 <body>
@@ -134,15 +210,57 @@
                             <h4 style="color: #b04c87bf;">PT. Meraki Anugerah Pratama</h4>
                             <p>PT Meraki menyiapkan segala macam pelatihan yang anda butuhkan! <br>Lakukan hal terbaik untuk hasil yang terbaik!</p>                           
                         </div>
+                        <div class="chat-bubble">
+                            <div class="chat-header">
+                                <h2>Hi Meraki People!</h2>
+                                <p>Admin kami sedang online, chat untuk memulai diskusi tentang Pelatihan K3.</p>
+                            </div>
+                            <div class="chat-body">
+                                <div class="chat-account">
+                                    <img src="path/to/naja-image.jpg" alt="Alive Mulyanto" class="chat-img">
+                                    <div class="chat-info">
+                                        <h3>Account Executive</h3>
+                                        <p>Alive Mulyanto</p>
+                                        <a href="" class="chat-link">Chat</a>
+                                    </div>
+                                </div>
+                                <div class="chat-account">
+                                    <img src="path/to/ibnu-image.jpg" alt="Firman Wijaya" class="chat-img">
+                                    <div class="chat-info">
+                                        <h3>Account Executive</h3>
+                                        <p>Firman Wijaya</p>
+                                        <a href="" class="chat-link">Chat</a>
+                                    </div>
+                                </div>
+                                <div class="chat-account">
+                                    <img src="path/to/ibnu-image.jpg" alt="Elita Nur" class="chat-img">
+                                    <div class="chat-info">
+                                        <h3>Account Executive</h3>
+                                        <p>Elita Nur</p>
+                                        <a href="" class="chat-link">Chat</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-footer">
+                                <p>Phone Call: <a href="tel:+6282123113337">0821-2311-3337</a></p>
+                            </div>
+                        </div>
                         <button type="button" class="btn btn-success btn-md d-flex align-items-center whatsapp-button">
-                            <a href="https://wa.me/6281285527615" class="btn btn-success btn-md d-flex align-items-center whatsapp-button">
+                            <a href="#" class="btn btn-success btn-md d-flex align-items-center whatsapp-button">
                                 <i class="fab fa-whatsapp me-2"></i>
-                                <small>Daftar Sekarang</small>
+                                <small>Butuh bantuan? Klik disini!</small>
                             </a>
                         </button>
                     </div>
                 </div>
             </div>
+            <script>
+                document.querySelector('.whatsapp-button').addEventListener('click', function() {
+                    const chatBubble = document.querySelector('.chat-bubble');
+                    chatBubble.style.display = chatBubble.style.display === 'block' ? 'none' : 'block';
+                });
+
+            </script>
             
             <section id="about" class="about section my-3 py-5" style="background-color: #f8f9fa;">
                 <div class="container-section-title text-center">
